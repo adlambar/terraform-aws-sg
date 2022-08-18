@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_security_group" "instances" {
+resource "aws_security_group" "sg_general" {
   name = "general"
   ingress {
     from_port   = 22
