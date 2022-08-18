@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "instances" {
-  name = "sg-general"
+  name = "general"
   ingress {
     from_port   = 22
     to_port     = 22
